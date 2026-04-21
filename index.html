@@ -122,13 +122,16 @@
                         <h4>Converj Global Private Ltd</h4>
                         <ul class="job-details">
                             <li><strong>Engineering Leadership:</strong> Spearheaded development of a high-scale
-                                payments platform, managing 40+ Go backend services integrated with payment gateways and
-                                vendors.</li>
+                                payments platform, managing 40+ Go backend services integrated with payment gateways,
+                                EPS, and various other vendors for multi channel communication, seemless onboarding,
+                                analytics, invoicing and payment processing.
+                            </li>
                             <li><strong>Data Architecture:</strong> Designed a cloud-native transactional data lake
                                 using AWS & Apache Iceberg; optimized pipelines for 50k+ companies (78% faster
                                 processing).</li>
-                            <li><strong>Cloud FinOps:</strong> Slashed monthly GCP expenditure by 74% by right-sizing
-                                infrastructure and migrating to self-hosted GKE.</li>
+                            <li><strong>Cloud FinOps:</strong> Slashed monthly GCP expenditure by 91% by right-sizing
+                                infrastructure and migrating to self-hosted services and making use of spot instances
+                                for dev enviornment.</li>
                             <li><strong>CI/CD Optimization:</strong> Accelerated deployment velocity by reducing CI/CD
                                 runtimes from 15m to &lt;4m via Go module and build caching.</li>
                         </ul>
@@ -205,8 +208,42 @@
     <section id="projects" class="section projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
+
+
             <div class="projects-grid">
-                <!-- Project 1: Sever-Management -->
+
+                <!-- Project 1: bookSpot -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>bookSpot</h3>
+                            <div class="tech-stack">
+                                <span>Go</span>
+                                <span>Kafka</span>
+                                <span>gRPC</span>
+                                <span>PostgreSQL</span>
+                                <span>Docker</span>
+                                <span>Kubernetes</span>
+                            </div>
+                        </div>
+                        <ul class="project-features">
+                            <li> Engineered a microservices-based backend architecture inspired by a manga/ comic reader
+                                application</li>
+                            <li>Built 3 Golang microservices with both synchronous (gRPC, HTTP) and asynchronous
+                                (Kafka) communication</li>
+                            <li>Developed reuseable Go libraries for middleware, logging, error handling, JWT
+                                authentication, Kafka and PostgreSQL clients.</li>
+                            <li>Implemented OpenTelemetry and Jaeger based observability and OpenAPI based API
+                                documentation.</li>
+                            <li>Containerized the entire system using Docker Compose for local development and
+                                Kubernetes manifests and Helm charts for deployment.</li>
+                        </ul>
+                        <a href="https://github.com/Rhythin/bookSpot" class="btn btn-secondary btn-small"
+                            target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </article>
+
+                <!-- Project : Sever-Management -->
                 <article class="project-card">
                     <div class="project-content">
                         <div class="project-header">
@@ -229,28 +266,7 @@
                     </div>
                 </article>
 
-                <!-- Project 2: bookSpot -->
-                <article class="project-card">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>bookSpot</h3>
-                            <div class="tech-stack">
-                                <span>Go</span>
-                                <span>Kafka</span>
-                                <span>gRPC</span>
-                                <span>Kubernetes</span>
-                            </div>
-                        </div>
-                        <ul class="project-features">
-                            <li>Microservices architecture with gRPC communication</li>
-                            <li>Event-driven notifications using Apache Kafka</li>
-                            <li>Secure JWT-based authentication & authorization</li>
-                            <li>Centralized structured logging across services</li>
-                        </ul>
-                        <a href="https://github.com/Rhythin/bookSpot" class="btn btn-secondary btn-small"
-                            target="_blank"><i class="fab fa-github"></i> View Repo</a>
-                    </div>
-                </article>
+
 
                 <!-- Project 3: Movie Ticket Booking -->
                 <article class="project-card">
@@ -390,7 +406,7 @@
                 </article>
 
                 <!-- Project 9: Frontend Architecture -->
-                <article class="project-card">
+                <!-- <article class="project-card">
                     <div class="project-content">
                         <div class="project-header">
                             <h3>Frontend Component Lab</h3>
@@ -409,7 +425,7 @@
                         <a href="https://github.com/Rhythin/Accio_FE2_module_test" class="btn-link" target="_blank"><i
                                 class="fab fa-github"></i> View Repo</a>
                     </div>
-                </article>
+                </article> -->
             </div>
             <div class="github-cta">
                 <a href="https://github.com/Rhythin" class="btn btn-secondary" target="_blank">View More on GitHub <i
